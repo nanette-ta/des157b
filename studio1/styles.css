@@ -1,0 +1,82 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: orange;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
+
+#poem p {
+    position: absolute;
+    padding: 1em;
+    font-size: 100px;
+    transition: all 2.5s;
+}
+
+#line1 {
+    top: 20%;
+    left: 30%;
+    font-family: Special Gothic Expanded One;
+    font-weight: 100;
+    color: white;
+}
+
+#line2 {
+    top: 20%;
+    left: 30%;
+    font-family: Special Gothic Expanded One;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+#line3 {
+    top: 20%;
+    left: 30%;
+    font-family: Special Gothic Expanded One;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
+
+.fa-dove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: antiquewhite;
+    transform: translate(-50%, -50%);
+    animation: bird 2s infinite alternate ease-in-out;
+}
+
+@keyframes bird {
+    0% {
+        opacity: .5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+        transform: scale(1.5);
+    }
+}

@@ -13,6 +13,9 @@ body {
     background-color: #FFFBEE;
     color: #A5CACA;
     transition: all 2s;
+    /* background-image: url(./images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 body.switch {
