@@ -1,0 +1,43 @@
+{
+    "point1" : {
+        "day" : "Sunday",
+        "hours" : "10",
+        "reason" : "it was Sunday Funday"
+},
+
+    "point2" : {
+        "day" : "Monday",
+        "hours" : "8",
+        "reason" : "class was canceled"
+},
+
+    "point3" : {
+        "day" : "Tuesday",
+        "hours" : "7",
+        "reason" : "I had an 8am meeting"
+},
+
+    "point4" : {
+        "day" : "Wednesday",
+        "hours" : "9",
+        "reason" : "I had an afternoon class"
+},
+
+    "point5" : {
+        "day" : "Thursday",
+        "hours" : "6",
+        "reason" : "I had a 9am class"
+},
+
+    "point6" : {
+        "day" : "Friday",
+        "hours" : "11",
+        "reason" : "I did not have classes"
+},
+
+    "point7" : {
+        "day" : "Saturday",
+        "hours" : "6",
+        "reason" : "I stayed up late baking cookies"
+}
+}
