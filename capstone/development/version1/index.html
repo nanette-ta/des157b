@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Harper!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="instructionsModal" class="modal">
+      <div class="modal-content">
+        <h2>How to Play</h2>
+
+        <p>
+          Hi! Harper is a harp seal pup in desperate need of your help! She is
+          only 5 days old but needs to grow up fast to learn how to swim and
+          survive the Artic environment. Due to climate change, the sea ice is
+          melting fast and she might drown! You can help save Harper by...
+        </p>
+
+        <ul>
+          <li>Helping her hop across the sea ice to drink milk and grow!</li>
+          <li>
+            Use the arrow keys to move before timer runs out and the ice cracks.
+          </li>
+          <li>
+            Collect all bottles before it is too late! Her fate lies in your
+            hands!
+          </li>
+        </ul>
+
+        <button id="startButton">Start Game</button>
+      </div>
+    </div>
+
+    <div class="game-info">
+      <div class="timer">Time: <span id="timeLeft">20</span>s</div>
+
+      <div class="bottles-count">
+        Bottles: <span id="bottlesCollected">0</span>/5
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-board" id="gameBoard"></div>
+
+      <div class="game-over" id="gameOver" style="display: none">
+        <h2>Ice Broke!</h2>
+        <p>You didn't collect all the milk in time... Harper has drowned.</p>
+        <button class="restartButton">Try Again</button>
+      </div>
+
+      <div class="game-won" id="gameWon" style="display: none">
+        <h2>Victory!</h2>
+        <p>The chunky seal collected all the milk bottles!</p>
+        <button class="restartButton">Play Again</button>
+      </div>
+    </div>
+
+  </body>
+</html>
