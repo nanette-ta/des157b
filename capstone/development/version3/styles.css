@@ -85,7 +85,7 @@ body {
   .game-container {
     position: relative;
     width: 1200px;
-    height: 900px;
+    height: 880px;
     border: 20px solid #ADE4FF;
     /* padding: 30px; */
     border-radius: 15px;
@@ -182,8 +182,8 @@ body {
   
   .bottle-img {
     object-fit: contain;
-    width: 40%;
-    height: 30%;
+    width: 30%;
+    height: 20%;
   
     /* border: solid red; */
   }
