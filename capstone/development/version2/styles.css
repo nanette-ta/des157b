@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 100px 0;
+    /* background: linear-gradient(135deg, #87ceeb, #e0f6ff); */
+    background: #ADE4FF;
+    font-family: "Comic Sans MS", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    }
+  
+  .modal {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 70px;
+    gap: 30px;
+    width: 950px;
+    height: 380px;
+    background: #E1F5FF;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    margin: 0;
+    color: #505050;
+  }
+  
+  .modal-content p {
+    margin: 0;
+    text-align: left;
+    color: #505050;
+  }
+
+  .content {
+    display: flex;
+    gap: 50px;
+  }
+
+  .harper {
+    width: 300px;
+    height: 200px;
+  }
+  
+  ul {
+    margin-top: 8px;
+  }
+  
+  ul li {
+    padding-top: 10px;
+    text-align: left;
+    color: #505050;
+  }
+  
+  .game-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+  
+  .timer {
+    color: #ff6b6b;
+  }
+  
+  .bottles-count {
+    color: #4ecdc4;
+  }
+  
+  .game-container {
+    position: relative;
+    width: 1200px;
+    height: 880px;
+    border: 20px solid #ADE4FF;
+    /* padding: 30px; */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .game-board {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ice-tile {
+    background-color: #E1F5FF;
+    border-radius: 15px;
+
+    position: relative;
+  }
+  
+  .seal {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  
+    /* border: solid black; */
+  }
+  
+  .seal-img {
+    object-fit: contain;
+    width: 60%;
+    height: 90%;
+  }
+  
+  .seal.hopping {
+    animation: hop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  @keyframes hop {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-25px);
+    }
+    80% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .seal.swimming {
+    animation: swim 1s infinite alternate;
+  }
+  
+  @keyframes swim {
+    0% {
+      transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(5deg);
+    }
+  }
+  
+  .milk-bottle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: bottle-glow 2s infinite alternate;
+  
+    /* border: solid black; */
+  }
+  
+  @keyframes bottle-glow {
+    0% {
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+    }
+    100% {
+      filter: drop-shadow(0 0 15px rgba(135, 206, 250, 0.8));
+    }
+  }
+  
+  .bottle-img {
+    object-fit: contain;
+    width: 30%;
+    height: 20%;
+  
+    /* border: solid red; */
+  }
+  
+  .game-over,
+  .game-won {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border: 3px solid #2e4a6b;
+  }
+  
+  .game-over h2,
+  .game-won h2 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+  }
+  
+  .game-over h2 {
+    color: #ff6b6b;
+  }
+  
+  .game-won h2 {
+    color: #4ecdc4;
+  }
+  
+  button {
+    background: linear-gradient(145deg, #4ecdc4, #45b7b8);
+    border: none;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(145deg, #45b7b8, #3a9b9c);
+    transform: translateY(-2px);
+  }
