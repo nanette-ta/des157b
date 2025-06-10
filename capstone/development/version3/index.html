@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Harper!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="instructionsModal" class="modal">
+      <div class="modal-content">
+        <h2>Save Harper!</h2>
+
+        <div class="content">
+          <div class="harper">
+            <img src="./images/seal3.png" alt="Harper Seal" width="300" height="200">
+          </div>
+
+          <div class="text">
+            <p>
+              Hi, my name is Harper, and I'm a harp seal pup in desperate need of your help! I am only 5 days old, but I need to grow up quickly to learn how to swim and survive in the Arctic environment. Due to climate change, the sea ice is melting fast, and I might drown! You can help save me by...
+            </p>
+    
+            <ul>
+              <li>Helping me hop across the sea ice to drink milk and grow!</li>
+              <li>Use the arrow keys to move before the timer runs out and the ice cracks.</li>
+              <li>Collect all of the milk before it is too late! My fate lies in your hands!</li>
+            </ul>
+          </div>
+        </div>
+
+        <button id="startButton">Start Game</button>
+      </div>
+    </div>
+
+    <div class="game-info">
+      <div class="timer">Time: <span id="timeLeft">20</span>s</div>
+
+      <div class="bottles-count">
+        Bottles: <span id="bottlesCollected">0</span>/5
+      </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+      <source src="./music/background.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="game-container">
+      <div class="game-board" id="gameBoard"></div>
+
+      <div class="game-over" id="gameOver" style="display: none">
+        <h2>Ice Broke!</h2>
+        <p>You didn't collect all of the milk bottles in time... Harper has drowned.</p>
+        <button class="restartButton">Try Again</button>
+      </div>
+
+      <div class="game-won" id="gameWon" style="display: none">
+        <h2>Victory!</h2>
+        <p>You collected all of the milk bottles! Harper is big and strong enough to swim! She has survived!</p>
+        <button class="restartButton">Play Again</button>
+      </div>
+    </div>
+
+  </body>
+</html>
