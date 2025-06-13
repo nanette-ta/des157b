@@ -111,3 +111,60 @@ body {
     color: #424242;
     font-weight: 600;
   }
+
+  @media (max-width: 700px) {
+    body {
+      padding: 10px;
+    }
+  
+    .hats-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .hat-slot {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .draggable {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .draggable img {
+      width: 120px;
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+  
+    #dropzone {
+      width: 150px;
+      height: 150px;
+      top: 850px; 
+      left: 35%;
+    }
+  
+    img[alt="Miffy"] {
+      width: 250px;
+      height: auto;
+      margin-top: 100px;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    a {
+      font-size: 14px;
+    }
+  }
+  
