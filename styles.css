@@ -197,3 +197,67 @@ button.switch:hover {
     background-color: #70FE67;
     color: #1E1E1E;
 }
+
+@media (max-width: 700px) {
+    #container {
+        min-width: 320px;
+        margin: 0.5em auto;
+        padding: 0 0.5em;
+        padding-top: 1em;
+    }
+
+    #banner {
+        height: 300px;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    #banner h1 {
+        font-size: 1.8em;
+    }
+
+    #banner h2 {
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+
+    #Glowless,
+    #Glowing {
+        height: 120px;
+        width: 75px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em 0;
+    }
+
+    main section {
+        margin: 0;
+        padding: 0.8em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        margin-bottom: 0.8em;
+    }
+
+    section li {
+        padding-left: 0.8em;
+        margin-bottom: 0.3em;
+    }
+
+    section a {
+        padding: 0.4em;
+        font-size: 0.9em;
+        line-height: 1.3;
+    }
+
+    button {
+        top: 15px;
+        right: 15px;
+        padding: 10px 14px;
+        font-size: 0.8em;
+    }
+}
